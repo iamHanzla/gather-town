@@ -1,21 +1,87 @@
+.app {
+  background: url("./background-gather.jpeg");
+  width: 90rem;
+  height: 52rem;
+}
+
 .box {
-	display: flex;
-	flex-direction: column;
-	width: max-content;
-	margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: auto;
+
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1.5rem;
+  backdrop-filter: blur(2rem);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  padding: 15px 20px;
+}
+
+.box {
+  transform: translate(0px, 240px);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
 }
 
 h3 {
-	text-align: center;
+  text-align: center;
 }
 
-input {
-	margin: 8px;
-	padding: 8px;
-	outline: none;
+#input-name,
+#input-room {
+  margin: 8px;
+  padding: 8px;
+  outline: none;
+  background-color: transparent;
+  opacity: 0.75;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  border-radius: 16px;
+  padding: 12px;
+  margin: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  font-weight: 500;
+  backdrop-filter: blur(2rem);
+  outline: none;
+  border: 1px solid #707070;
 }
 
 button {
-	margin: 8px;
-	padding: 8px;
+  margin: 8px;
+  padding: 8px;
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+}
+button:hover {
+  background-color: rgb(238, 238, 238);
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  font-weight: bold;
+  transform: scale(1.2);
+  transition-duration: 100ms;
+}
+
+button:not(:hover) {
+  font-weight: 400;
+  transform: scale(1);
+  transition-duration: 100ms;
 }
